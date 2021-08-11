@@ -9,9 +9,7 @@ function App() {
       <h1>Issue Tracker</h1>
       <IssuesList />
     </div>
-
   )
-
 }
 
 export default App;
