@@ -4,8 +4,8 @@ A simple Single Page Application (SPA) that tracks issues:
 - Each issue has the open to to set the status (open or closed).
 - Users can create and update an issue as well view and view them in a table format. 
 
-![update view](https://github.com/mchippendale/issues-tracker/blob/issues-tracker/update.png)
-![Alt Issue Tracker](Image '/save.png')
+![update view](https://github.com/mchippendale/issues-tracker/blob/issues-tracker/blob/main/update.png)
+![update view](https://github.com/mchippendale/issues-tracker/blob/issues-tracker/blob/main/save.png)
 
 
 ## Application Architecture
