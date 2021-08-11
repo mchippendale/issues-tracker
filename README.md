@@ -4,6 +4,10 @@ A simple Single Page Application (SPA) that tracks issues:
 - Each issue has the open to to set the status (open or closed).
 - Users can create and update an issue as well view and view them in a table format. 
 
+![Alt Issue Tracker](Image '/update.png')
+![Alt Issue Tracker](Image '/save.png')
+
+
 ## Application Architecture
 The application has been built with a separate front and back-end. 
 - Front-end: React.JS
@@ -33,6 +37,8 @@ Frontend: ReactJS
 - react: enable react components in the application. 
     - useEffect
     - useState
+    - Fragment
+    - React
 - react-dom: render/re-render page in the browser 
 - react-scripts
 
