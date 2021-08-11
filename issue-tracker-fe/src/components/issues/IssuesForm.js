@@ -1,4 +1,5 @@
 import React from 'react'
+import './IssuesForm.css'
 
 export default function IssuesForm(props) {
   
@@ -6,8 +7,9 @@ export default function IssuesForm(props) {
         <div className="create-issue-form-container App">
           <form onSubmit={props.handleSubmit}>
             <label>
-              <p>New Issue</p>
+              <p className="create-issue-form-heading">Add Issue</p>
                 <input 
+                  className="input"
                   onChange={props.handleChange} 
                   value={props.issue.title} 
                   type="text" 
@@ -15,21 +17,28 @@ export default function IssuesForm(props) {
                   placeholder="Title">
                 </input>
                 <input 
+                  className="input"
                   onChange={props.handleChange} 
                   value={props.issue.description} 
                   type="text" 
                   name="description" 
                   placeholder="Description">  
                 </input>
+                {/* <select className="input">
+                  <option value="1">select status</option>
+                  <option value="1">open</option>
+                  <option value="2">closed</option>
+                </select> */}
                 <input 
+                  className="input"
                   onChange={props.handleChange} 
                   value={props.issue.status} 
                   type="text" 
                   name="status" 
-                  placeholder="Status">
+                  placeholder="Status...open/closed">
                 </input>
             </label>
-            <button type="submit">Submit</button>
+            <button className="btn" type="submit">Submit</button>
           </form><br></br>
         </div>
       );

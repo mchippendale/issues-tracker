@@ -121,10 +121,10 @@ export default function IssuesList () {
           handleSubmit={handleCreateFormSubmit} 
           issue={newIssueData}
         />
-        <div className="issue-list-container App">
+        <div className="issues-table-container App">
           { loaded && 
-            <form onSubmit={handleUpdateFormSubmit}>
-              <table>
+            <form className="update-form" onSubmit={handleUpdateFormSubmit}>
+              <table className="issues-table">
                 <thead>
                   <tr>
                     <th>Title</th>

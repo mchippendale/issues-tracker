@@ -6,6 +6,7 @@ export default function EditIssueRow({ issue, updateIssueData, handleUpdateFormC
             <tr>
                 <td>
                     <input 
+                        className="input"
                         type="text" 
                         name="title" 
                         placeholder="Enter issue title..."
@@ -17,6 +18,7 @@ export default function EditIssueRow({ issue, updateIssueData, handleUpdateFormC
                 </td>
                 <td>
                     <input 
+                        className="input"
                         type="text" 
                         name="description" 
                         placeholder="Enter issue description..."
@@ -27,10 +29,16 @@ export default function EditIssueRow({ issue, updateIssueData, handleUpdateFormC
                     </input>
                 </td>
                 <td>
+                    {/* <select className="input">
+                        <option value="1">select status</option>
+                        <option value="1">open</option>
+                        <option value="2">closed</option>
+                    </select> */}
                     <input 
+                        className="input"
                         type="text" 
                         name="status" 
-                        placeholder="Enter issue status..."
+                        placeholder="status...open/closed"
                         required="required"
                         value={updateIssueData.status}
                         onChange={handleUpdateFormChange}
@@ -44,8 +52,8 @@ export default function EditIssueRow({ issue, updateIssueData, handleUpdateFormC
                     {issue.updated_at}
                 </td>
                 <td>
-                    <button type="submit">Save</button>
-                    <button type="button" onClick={handleCancelClick}>Cancel</button>
+                    <button className="save-btn btn" type="submit">Save</button>
+                    <button className="cancel-btn btn" type="button" onClick={handleCancelClick}>Cancel</button>
                 </td>
             </tr>
     )

@@ -1,43 +1,95 @@
 * {
     box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
 }
 
-.issue-container {
-    border: 1px solid black
+.issues-table-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    border: 1px solid #ffffff;
-    text-align: left;
-    padding: 8px;
-    font-size: 1rem;
-  }
-  
-  th {
-    background-color: rgb(117, 201, 250);
-  }
-  
-  td {
-    background-color: rgb(205, 235, 253);
-  }
-  
-  /* form {
-    display: flex;
-    gap: 5px;
-  }
-  
-  form td:last-child {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  form * {
-    font-size: 1rem;
-  } */
+.issues-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* tr {
+  background-color: rgb(205, 235, 253);
+} */
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  height: 100%;
+  font-weight:300;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+.update-form {
+  display: flex;
+  gap: 5px;
+}
+
+.update-form td:last-child {
+  display: grid;
+}
+
+.update-form{
+  font-size: 1rem;
+} 
+
+.btn {
+  display:inline-block;
+  height: 2rem;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  text-decoration:none;
+  font-weight:300;
+  color:black;
+  background-color:#4eb5f1;
+  text-align:center;
+  border: none;
+}
+
+.btn:hover{
+  background-color:#4095c6;
+}
+
+.update-btn {
+
+}
+
+.save-btn {
+  background-color:#83ff77;
+}
+
+.save-btn:hover{
+  background-color:#5de251;
+}
+
+.cancel-btn {
+  background-color:#fce66b;
+}
+
+.cancel-btn:hover{
+  background-color:#f3da4d;
+}
+
+.delete-btn {
+  background-color:#fc7c6b;
+}
+
+.delete-btn:hover{
+  background-color:#e96453;
+}

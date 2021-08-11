@@ -6,11 +6,8 @@ function App() {
 
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/api/v1/issues">
-          <IssuesList />
-        </Route>
-      </Switch>
+      <h1>Issue Tracker</h1>
+      <IssuesList />
     </div>
 
   )

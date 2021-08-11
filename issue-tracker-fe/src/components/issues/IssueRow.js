@@ -9,8 +9,8 @@ export default function IssueRow({ issue, idx, handleUpdateClick, handleDeleteCl
                 <td>{issue.created_at}</td>
                 <td>{issue.updated_at}</td>
                 <td>
-                    <button type="button" onClick={(e) => handleUpdateClick(e, issue)}>Update</button>
-                    <button type="button" onClick={() => handleDeleteClick(issue.id)}>Delete</button>
+                    <button className=" update-btn btn" type="button" onClick={(e) => handleUpdateClick(e, issue)}>Update</button>
+                    <button className="delete-btn btn" type="button" onClick={() => handleDeleteClick(issue.id)}>Delete</button>
                 </td>
             </tr>
     )
