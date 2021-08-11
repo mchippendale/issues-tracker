@@ -1,5 +1,7 @@
 # Issues Tracker
-A simple Single Page Application (SPA) that tracks issues:
+A simple Single Page Application (SPA) that tracks issues- the app is still in the development phase and has notyet been deployed. 
+
+### Key functions:
 - Issues have a title and description. 
 - Each issue has the open to to set the status (open or closed).
 - Users can create and update an issue as well view and view them in a table format. 
